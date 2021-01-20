@@ -15,20 +15,20 @@
   border: 1px solid #ddd;
   width: 100%;
   padding: 20px 0;
-  background-color: #76b900;
-  transition: all linear 0.8s;
+  background-color: #a55cb9;
+  transition: all linear 0.9s;
   font-size: 20px;
   cursor: pointer;
   &:hover {
-    background-color: #0a6f97;
-    opacity: 0.7;
+    background-color: #570b66;
+    opacity: 0.9;
     color: #e0f006;
   }
 }
 
 .list {
   display: none;
-  transition: all linear 0.2s;
+  transition: all linear 0.8s;
   li {
     cursor: pointer;
     border-top: 1px solid #1fbfff;
