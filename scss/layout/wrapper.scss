@@ -1,3 +1,5 @@
+@import '../base/reset';
+
 .wrapper {
   padding: 40px 0;
   min-height: 100vh;
@@ -16,22 +18,30 @@
   width: 100%;
   padding: 20px 0;
   background-color: #a55cb9;
-  transition: all linear 0.9s;
+  transition: 0.4s;
   font-size: 20px;
   cursor: pointer;
   &:hover {
     background-color: #570b66;
-    opacity: 0.9;
     color: #e0f006;
   }
 }
 
 .list {
-  display: none;
-  transition: all linear 0.8s;
+  height: 0;
+  transition: height linear 0.2s;
+  background-color: rgb(0, 0, 0);
+  font-size: 18px;
+  color: #1fbfff;
+  overflow: hidden;
+  &.active {
+    height: 132px;
+    transition: height linear 0.2s
+  }
+
   li {
     cursor: pointer;
-    border-top: 1px solid #1fbfff;
+    border: 1px solid #1fbfff;
     padding: 5px;
     &:hover {
       background-color: #0a6f97;
@@ -40,10 +50,4 @@
   }
 }
 
-.list.active {
-  font-size: 18px;
-  display: block;
-  background-color: rgb(0, 0, 0);
-  transition: all linear 0.2s;
-  color: #1fbfff;
-}
+
